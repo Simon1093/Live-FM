@@ -1,12 +1,24 @@
-Требования:
-php >= 7.2
-
-Инструкция:
-
-1) Клонируем репозиторий git clone https://github.com/Simon1093/Live-FM.git
-2) Переходим в папку public_html и выполняем composer update
-3) И переименовываем .env.example в .env
-
+<p>Требования:</p>
+<br>
+<ul>
+    <li>PHP >= 7.1.3</li>
+    <li>OpenSSL PHP Extension</li>
+    <li>PDO PHP Extension</li>
+    <li>Mbstring PHP Extension</li>
+    <li>Tokenizer PHP Extension</li>
+    <li>XML PHP Extension</li>
+    <li>Ctype PHP Extension</li>
+    <li>JSON PHP Extension</li>
+    <li>BCMath PHP Extension</li>
+</ul>
+<br/>
+<p>Инструкция:</p>
+<ul>
+    <li>Клонируем репозиторий git clone https://github.com/Simon1093/Live-FM.git</li>
+    <li>Переходим в папку public_html и выполняем composer update</li>
+    <li>И переименовываем .env.example в .env</li>
+</ul>
+<br/>
 
 Участники:
 1) Скачков Дмитрий Евгеньевич
