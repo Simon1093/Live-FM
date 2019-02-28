@@ -10,9 +10,9 @@ export default class App extends Component {
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">Example Component</div>
-                                <div className="card-body">
-                                    <Button>Im superman)</Button>
-                                </div>
+                            <div className="card-body">
+                                <Button>Im superman)</Button>
+                            </div>
                         </div>
                     </div>
                 </div>

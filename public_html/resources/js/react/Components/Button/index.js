@@ -35,7 +35,7 @@ const Button = ({
 }) => {
 
     return (
-        <StyledButton 
+        <StyledButton
             className={className}
             type="button"
             id={id}
@@ -44,7 +44,7 @@ const Button = ({
             // disabled={disabled}
             onClick={onClick}
         >
-        {children}
+            {children}
         </StyledButton >
     );
 }
