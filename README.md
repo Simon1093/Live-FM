@@ -16,6 +16,7 @@
     <li>Клонируем репозиторий git clone https://github.com/Simon1093/Live-FM.git</li>
     <li>Переходим в папку public_html и выполняем composer update</li>
     <li>И переименовываем .env.example в .env</li>
+    <li>выполняем php artisan key:generate</li>
 </ul>
 <br/>
 
