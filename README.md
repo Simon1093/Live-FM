@@ -1,5 +1,4 @@
 <p>Требования:</p>
-<br>
 <ul>
     <li>PHP >= 7.1.3</li>
     <li>OpenSSL PHP Extension</li>
