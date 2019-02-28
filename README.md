@@ -1,6 +1,9 @@
+Требования:
+php >= 7.2
+
 Инструкция:
 
-1) Клонируем репозиториц git clone https://github.com/Simon1093/Live-FM.git
+1) Клонируем репозиторий git clone https://github.com/Simon1093/Live-FM.git
 2) Переходим в папку public_html и выполняем composer update
 3) И переименовываем .env.example в .env
 
