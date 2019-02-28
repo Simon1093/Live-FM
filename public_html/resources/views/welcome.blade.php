@@ -13,7 +13,7 @@
         
     </head>
     <body>
-        <div id='example'>
+        <div id='root'>
         </div>
     </body>
     <script src="/js/app.js"></script>

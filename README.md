@@ -19,6 +19,7 @@
     <li>выполняем php artisan key:generate</li>
     <li>Для работы с React необходимо также поставить Node JS</li>
     <li>Фронт билдится двумя способами, либо через команду npm run dev либо через npm run watch</li>
+    <li>Для работы Linter необходимо поставть ESLint, и чуть-чуть погуглить)</li>
 </ul>
 <br/>
 

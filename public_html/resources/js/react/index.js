@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Button } from './Components/index';
 
-export default class Example extends Component {
+export default class App extends Component {
     render() {
         return (
             <div className="container">
@@ -9,9 +10,9 @@ export default class Example extends Component {
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">Example Component</div>
-                                <div className="card-body">
-                                    Im superman)
-                                </div>
+                            <div className="card-body">
+                                <Button>Im superman)</Button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -20,6 +21,6 @@ export default class Example extends Component {
     }
 }
 
-if (document.getElementById('example')) {
-    ReactDOM.render(<Example />, document.getElementById('example'));
+if (document.getElementById('root')) {
+    ReactDOM.render(<App />, document.getElementById('root'));
 }
