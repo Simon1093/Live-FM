@@ -16,10 +16,10 @@
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
-        "lodash": "^4.17.5",
+        "lodash": "^4.17.11",
         "popper.js": "^1.12",
         "react": "^16.2.0",
-        "react-dom": "^16.2.0",
+        "react-dom": "^16.8.3",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0"
@@ -27,7 +27,18 @@
     "dependencies": {
         "babel-eslint": "^10.0.1",
         "eslint": "^5.14.1",
+        "express": "^4.16.4",
+        "laravel-mix-tailwind": "^0.1.0",
+        "localforage": "^1.7.3",
+        "nprogress": "^0.2.0",
         "prop-types": "^15.7.2",
+        "react-click-outside": "^3.0.1",
+        "react-document-title": "^2.0.3",
+        "react-redux": "^6.0.1",
+        "react-router": "^4.3.1",
+        "react-router-dom": "^4.3.1",
+        "redux": "^4.0.1",
+        "redux-thunk": "^2.3.0",
         "styled-components": "^4.1.3"
     }
 }

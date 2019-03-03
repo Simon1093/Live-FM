@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from './Components/index';
+import {Route,NavLink,HashRouter} from "react-router-dom";
+
+import "./index.css";
+
+import Home from "./src/Home";
+import Stuff from "./src/Stuff";
+import Contact from "./src/Contact";
 
 export default class App extends Component {
     render() {
         return (
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">Example Component</div>
-                            <div className="card-body">
-                                <Button>Im superman)</Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <HashRouter>
+            <div>
+              <h1>Simple SPA</h1>
+              <ul className="header">
+                <li><NavLink exact to="/">Home</NavLink></li>
+                <li><NavLink to="/stuff">Stuff</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+              </ul>
+              <div className="content">
+                <Route exact path="/" component={Home}/>
+                <Route path="/stuff" component={Stuff}/>
+                <Route path="/contact" component={Contact}/>
+              </div>
             </div>
+          </HashRouter>
         );
     }
 }
 
-if (document.getElementById('root')) {
-    ReactDOM.render(<App />, document.getElementById('root'));
+if (document.getElementById('app')) {
+    ReactDOM.render(<App />, document.getElementById('app'));
 }
