@@ -27,6 +27,7 @@
     <i>Если проблемы с react-router-dom то выполняем </i> <b>npm remove react-router-dom</b><br/>
     <i>и заново устанавливаем </i> <b>npm i react-router-dom</b>
 </p>
+<p>Локальный сервер можно запускать: <b>npm run watch & php artisan serve</b></p>
 
 Участники:
 1) Скачков Дмитрий Евгеньевич
