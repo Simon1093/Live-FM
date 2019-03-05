@@ -3,13 +3,14 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Http\Request;
 
 class HttpsProtocol {
 
     public function handle($request, Closure $next)
     {
-        //$request->setTrustedProxies( [ $request->getClientIp() ] );
-        if (!$request->secure() && !app()->environment('local')) {
+        $request->setTrustedProxies([$request->getClientIp()], Request::HEADER_X_FORWARDED_ALL);
+        if (!$request->secure()) {
             return redirect()->secure($request->getRequestUri());
         }
         return $next($request); 
