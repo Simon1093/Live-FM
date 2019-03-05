@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Для кросс доменных запросов (лишним думаю не будет)
+Route::group([ 'middleware' => ['api', 'cors'],'prefix' => 'api',], function ($router) {
+
+    Route::options('/{any}', function(){ return ''; })->where('any', '.*');
+
+});
