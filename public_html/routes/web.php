@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/{uri?}', function () {
     return view('welcome');
-});
+})->where('uri', '(.*)');
 
-//Для кросс доменных запросов (лишним думаю не будет)
-Route::group([ 'middleware' => ['api', 'cors'],'prefix' => 'api',], function ($router) {
-
-    Route::options('/{any}', function(){ return ''; })->where('any', '.*');
-
-});
+// //Для кросс доменных запросов (лишним думаю не будет)
+// Route::group([ 'middleware' => ['api', 'cors'],'prefix' => 'api',], function ($router) {
+//     Route::options('/{any}', function(){ return ''; })->where('any', '.*');
+// });
