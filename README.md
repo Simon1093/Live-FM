@@ -14,11 +14,11 @@
 <p>Инструкция:</p>
 <ul>
     <li>Клонируем репозиторий git clone https://github.com/Simon1093/Live-FM.git</li>
-    <li>Переходим в папку public_html и выполняем composer update</li>
-    <li>И переименовываем .env.example в .env</li>
-    <li>выполняем php artisan key:generate</li>
+    <li>Устанаавливааем composer</li>
     <li>Для работы с React необходимо также поставить Node JS</li>
-    <li>Фронт билдится двумя способами, либо через команду npm run dev либо через npm run watch</li>
+    <li>выполняем sudo ./install.sh</li>
+    <li>запускаем проект sudo ./run.sh</li>
+    <li>радуемся ;)</li>
     <li>Для работы Linter необходимо поставть ESLint, и чуть-чуть погуглить)</li>
 </ul>
 <br/>
@@ -27,7 +27,6 @@
     <i>Если проблемы с react-router-dom то выполняем </i> <b>npm remove react-router-dom</b><br/>
     <i>и заново устанавливаем </i> <b>npm i react-router-dom</b>
 </p>
-<p>Локальный сервер можно запускать: <b>npm run watch & php artisan serve</b></p>
 
 Участники:
 1) Скачков Дмитрий Евгеньевич
