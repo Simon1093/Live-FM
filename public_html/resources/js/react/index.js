@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Route,NavLink, BrowserRouter as Router, Switch} from "react-router-dom";
 
-import "./assets/css";
+import "./assets/css/index.css";
 
 import Home from "./src/containers/Home";
 import Stuff from "./src/containers/Stuff";

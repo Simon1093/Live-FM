@@ -1,3 +1,9 @@
+#!/bin/bash
+sudo chmod -R 777 *
+cd public_html
+sudo composer update
+sudo npm install
+cat <<EOT >> .env
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=
@@ -40,3 +46,7 @@ PUSHER_APP_CLUSTER=mt1
 
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+EOT
+sudo php artisan key:generate
+sudo chmod -R 777 *
+
