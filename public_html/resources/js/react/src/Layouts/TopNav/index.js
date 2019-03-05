@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import TopNavButton from '../../Components/TopNavButton';
+import { TopNavButton, TopNavLink } from '../../Components';
 
 const StyledTopNav = styled.div`
   position: fixed;
@@ -35,7 +35,15 @@ const TopNav = () => (
     <div>TopNav</div>
     <StyledRightBar>
       <StyledToolbarContainer>
-        <TopNavButton />
+        <TopNavButton
+          name="Menu"
+          iconName="fa-home"
+        />
+        <TopNavLink
+          name="Link"
+          iconName="fa-home"
+          to="/stuff"
+        />
       </StyledToolbarContainer>
     </StyledRightBar>
   </StyledTopNav>
