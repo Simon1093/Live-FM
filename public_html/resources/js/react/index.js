@@ -4,9 +4,9 @@ import {Route,NavLink,HashRouter} from "react-router-dom";
 
 import "./index.css";
 
-import Home from "./src/Home";
-import Stuff from "./src/Stuff";
-import Contact from "./src/Contact";
+import Home from "./src/containers/Home";
+import Stuff from "./src/containers/Stuff";
+import Contact from "./src/containers/Contact";
 
 export default class App extends Component {
     render() {
