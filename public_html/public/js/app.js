@@ -66681,7 +66681,7 @@ function isStyledComponent(target) {
 
 // 
 
-var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
+var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
 
 var SC_VERSION_ATTR = 'data-styled-version';
 

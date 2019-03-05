@@ -1,10 +1,10 @@
 #!/bin/bash
 sudo chmod -R 777 *
 cd public_html
-sudo composer update
+sudo composer install
 sudo npm install
 cat <<EOT >> .env
-APP_NAME=Laravel
+APP_NAME=Live-FM
 APP_ENV=local
 APP_KEY=
 APP_DEBUG=true
