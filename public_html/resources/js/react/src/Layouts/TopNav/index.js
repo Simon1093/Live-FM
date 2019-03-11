@@ -11,21 +11,22 @@ const StyledTopNav = styled.div`
   min-height: 60px;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  // justify-content: space-between;
   align-items: flex-start;
   box-shadow: 0 5px 12px 0 rgba(0,0,0,.16);
   background-color: rgba(0,0,0,0.8);
 `;
 
-const StyledToolbarContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
 
+const StyledLeftBar = styled.div`
+  display: flex;
+  align-items: center;
+`
 
 const StyledRightBar = styled.div`
   display: flex;
-  justify-content: space-between;
+  margin-left:auto;
   align-items: center;
 `;
 
@@ -33,18 +34,31 @@ const StyledRightBar = styled.div`
 const TopNav = () => (
   <StyledTopNav>
     <div>TopNav</div>
+    <StyledLeftBar>
+
+      <TopNavButton
+        name="Menu"
+        type="fa"
+        iconName="fa-list"
+      />
+      <TopNavLink
+        name="Audio Marks"
+        type="far"
+        iconName="fa-clock"
+        to="/contact"
+      />
+    </StyledLeftBar>
     <StyledRightBar>
-      <StyledToolbarContainer>
-        <TopNavButton
-          name="Menu"
-          iconName="fa-home"
-        />
-        <TopNavLink
-          name="Link"
-          iconName="fa-home"
-          to="/stuff"
-        />
-      </StyledToolbarContainer>
+      <TopNavLink
+        name="Live"
+        type="far"
+        iconName="fa-comment"
+        to="/stuff"
+      />
+      <TopNavButton
+        type="fa"
+        iconName="fa-user"
+      />
     </StyledRightBar>
   </StyledTopNav>
 );

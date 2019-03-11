@@ -14,6 +14,7 @@ const StyledLink = styled(Link)`
     background-color: #303030;
     color: #ddd;
     text-decoration: none;
+    opacity: 0.6;
   }
   &:focus {
     border: none;
@@ -25,37 +26,39 @@ const StyledIcon = styled(Icon)`
 `
 
 const TopNavButton = ({
-    id,
-    iconName,
-    name,
-    to,
-    className
+  id,
+  iconName,
+  name,
+  to,
+  type,
+  className
 }) => {
 
-    return (
-        <StyledLink
-            className={className}
-            id={id}
-            to={to}
-        >
-            <StyledIcon
-                type="fa"
-                iconName={iconName}
-            />
-            {name}
-        </StyledLink >
-    );
+  return (
+    <StyledLink
+      className={className}
+      id={id}
+      to={to}
+    >
+      <StyledIcon
+        type={type}
+        iconName={iconName}
+      />
+      {name}
+    </StyledLink >
+  );
 }
 
 TopNavButton.propTypes = {
-    id: PropTypes.string,
-    to: PropTypes.string.isRequired,
-    className: PropTypes.string,
-    name: PropTypes.string.isRequired,
-    iconName: PropTypes.string.isRequired
+  id: PropTypes.string,
+  to: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  iconName: PropTypes.string.isRequired
 }
 
 TopNavButton.defaultProps = {
-    className: ''
+  className: ''
 };
 export default TopNavButton;

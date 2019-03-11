@@ -66681,7 +66681,7 @@ function isStyledComponent(target) {
 
 // 
 
-var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
+var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
 
 var SC_VERSION_ATTR = 'data-styled-version';
 
@@ -69571,7 +69571,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 10px 20px;\n    width: auto;\n    min-width: 154px;\n    border-width:  1px;\n    border-radius: 3px;\n    color:  grey;\n    font-size: 13px;\n    text-transform: uppercase;\n    background-color:  white;\n    &: hover {\n        opacity: 0.6;\n        cursor: pointer;\n    }\n    &: focus {\n    outline: none;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 10px 20px;\n    width: auto;\n    min-width: 154px;\n    border-width:  1px;\n    border-radius: 3px;\n    color:  grey;\n    font-size: 13px;\n    text-transform: uppercase;\n    background-color:  white;\n    &: hover {\n        opacity: 0.4;\n        cursor: pointer;\n    }\n    &: focus {\n    outline: none;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -69706,7 +69706,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Icon */ "./resources/js/react/src/Components/Icon/index.js");
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  margin-right: 10px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-left: 10px;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -69716,7 +69716,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  border: none;\n  background: transparent;\n  display: flex;\n  color: white;\n  align-items: center;\n  padding: 20px 10px 20px 10px;\n  justify-content: center;\n  &:hover {\n    background-color: #303030;\n    color: #ddd;\n  }\n  &:focus {\n    border:none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  border: none;\n  background: transparent;\n  display: flex;\n  color: white;\n  align-items: center;\n  padding: 20px 10px 20px 10px;\n  justify-content: center;\n  &:hover {\n    background-color: #303030;\n    color: #ddd;\n    opacity: 0.4;\n  }\n  &:focus {\n    border:none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -69732,27 +69732,29 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject());
-var StyledIcon = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Icon__WEBPACK_IMPORTED_MODULE_3__["default"])(_templateObject2());
+var StyledName = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span(_templateObject2());
 
 var TopNavButton = function TopNavButton(_ref) {
   var id = _ref.id,
       iconName = _ref.iconName,
       name = _ref.name,
       onClick = _ref.onClick,
+      type = _ref.type,
       className = _ref.className;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
     className: className,
     type: "button",
     id: id,
     onClick: onClick
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, {
-    type: "fa",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    type: type,
     iconName: iconName
-  }), name);
+  }), name ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledName, null, name) : null);
 };
 
 TopNavButton.propTypes = {
   id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  type: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   onClick: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
   name: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
@@ -69792,7 +69794,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  color: white;\n  align-items: center;\n  padding: 20px 10px 20px 10px;\n  justify-content: center;\n  &:hover {\n    background-color: #303030;\n    color: #ddd;\n    text-decoration: none;\n  }\n  &:focus {\n    border: none;\n    color: white;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  color: white;\n  align-items: center;\n  padding: 20px 10px 20px 10px;\n  justify-content: center;\n  &:hover {\n    background-color: #303030;\n    color: #ddd;\n    text-decoration: none;\n    opacity: 0.6;\n  }\n  &:focus {\n    border: none;\n    color: white;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -69816,13 +69818,14 @@ var TopNavButton = function TopNavButton(_ref) {
       iconName = _ref.iconName,
       name = _ref.name,
       to = _ref.to,
+      type = _ref.type,
       className = _ref.className;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     className: className,
     id: id,
     to: to
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, {
-    type: "fa",
+    type: type,
     iconName: iconName
   }), name);
 };
@@ -69830,6 +69833,7 @@ var TopNavButton = function TopNavButton(_ref) {
 TopNavButton.propTypes = {
   id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
   to: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
+  type: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
   name: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   iconName: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
@@ -69884,7 +69888,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Components */ "./resources/js/react/src/Components/index.js");
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  margin-left:auto;\n  align-items: center;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -69894,7 +69898,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: flex-end;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -69904,7 +69908,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  color: white;\n  right: 0;\n  top: 0;\n  width: 100%;\n  min-height: 60px;\n  padding: 0 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n  box-shadow: 0 5px 12px 0 rgba(0,0,0,.16);\n  background-color: rgba(0,0,0,0.8);\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  color: white;\n  right: 0;\n  top: 0;\n  width: 100%;\n  min-height: 60px;\n  padding: 0 20px;\n  display: flex;\n  justify-content: flex-start;\n  // justify-content: space-between;\n  align-items: flex-start;\n  box-shadow: 0 5px 12px 0 rgba(0,0,0,.16);\n  background-color: rgba(0,0,0,0.8);\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -69919,18 +69923,28 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var StyledTopNav = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
-var StyledToolbarContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledLeftBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var StyledRightBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 
 var TopNav = function TopNav() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTopNav, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "TopNav"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightBar, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledToolbarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components__WEBPACK_IMPORTED_MODULE_2__["TopNavButton"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTopNav, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "TopNav"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftBar, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components__WEBPACK_IMPORTED_MODULE_2__["TopNavButton"], {
     name: "Menu",
-    iconName: "fa-home"
+    type: "fa",
+    iconName: "fa-list"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components__WEBPACK_IMPORTED_MODULE_2__["TopNavLink"], {
-    name: "Link",
-    iconName: "fa-home",
+    name: "Audio Marks",
+    type: "far",
+    iconName: "fa-clock",
+    to: "/contact"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightBar, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components__WEBPACK_IMPORTED_MODULE_2__["TopNavLink"], {
+    name: "Live",
+    type: "far",
+    iconName: "fa-comment",
     to: "/stuff"
-  }))));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components__WEBPACK_IMPORTED_MODULE_2__["TopNavButton"], {
+    type: "fa",
+    iconName: "fa-user"
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TopNav);

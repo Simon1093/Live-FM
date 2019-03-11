@@ -14,13 +14,14 @@ const StyledButton = styled.button`
   &:hover {
     background-color: #303030;
     color: #ddd;
+    opacity: 0.4;
   }
   &:focus {
     border:none;
   }
 `
-const StyledIcon = styled(Icon)`
-  margin-right: 10px;
+const StyledName = styled.span`
+  margin-left: 10px;
 `
 
 const TopNavButton = ({
@@ -28,6 +29,7 @@ const TopNavButton = ({
   iconName,
   name,
   onClick,
+  type,
   className
 }) => {
 
@@ -38,17 +40,18 @@ const TopNavButton = ({
       id={id}
       onClick={onClick}
     >
-      <StyledIcon
-        type="fa"
+      <Icon
+        type={type}
         iconName={iconName}
       />
-      {name}
+      {name ? <StyledName>{name}</StyledName> : null}
     </StyledButton >
   );
 }
 
 TopNavButton.propTypes = {
   id: PropTypes.string,
+  type: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   className: PropTypes.string,
   name: PropTypes.string.isRequired,

@@ -16,7 +16,7 @@ export const StyledButton = styled.button`
     text-transform: uppercase;
     background-color:  white;
     &: hover {
-        opacity: 0.6;
+        opacity: 0.4;
         cursor: pointer;
     }
     &: focus {
