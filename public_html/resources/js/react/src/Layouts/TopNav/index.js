@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TopNavButton, TopNavLink } from '../../Components';
+import { TopNavButton, TopNavLink, Input } from '../../Components';
 
 const StyledTopNav = styled.div`
   position: fixed;
@@ -46,6 +46,9 @@ const TopNav = () => (
         type="far"
         iconName="fa-clock"
         to="/contact"
+      />
+      <Input
+        type="text"
       />
     </StyledLeftBar>
     <StyledRightBar>

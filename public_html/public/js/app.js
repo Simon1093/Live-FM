@@ -69690,6 +69690,127 @@ Icon.defaultProps = {
 
 /***/ }),
 
+/***/ "./resources/js/react/src/Components/Input/index.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/react/src/Components/Input/index.js ***!
+  \**********************************************************/
+/*! exports provided: StyledInput, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledInput", function() { return StyledInput; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Icon */ "./resources/js/react/src/Components/Icon/index.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  height: 40px;\n  background-color: transparent;\n  width: 100%;\n  padding: 5px;\n  border-top: none;\n  border-left: none;\n  border-right: none;\n  border-bottom-width: 1px;\n  border-bottom-color: ", ";\n  &:focus{\n    outline:  none;\n    border-bottom-color: ", ";\n    &::placeholder {\n      opacity: 0;\n    }\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  color: #E95778;\n  display: flex;\n  margin-top: 5px;\n  font-size: 12px;\n  position: absolute;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var Span = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span(_templateObject());
+var StyledInput = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject2(), function (props) {
+  return props.invalid ? '#E95778' : '#E8E8E8';
+}, function (props) {
+  return props.invalid ? '#E95778' : '#6e5aad';
+});
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+
+var Input = function Input(_ref) {
+  var disabled = _ref.disabled,
+      onChange = _ref.onChange,
+      onBlur = _ref.onBlur,
+      placeholder = _ref.placeholder,
+      required = _ref.required,
+      invalid = _ref.invalid,
+      value = _ref.value,
+      name = _ref.name,
+      errorMessage = _ref.errorMessage,
+      type = _ref.type,
+      className = _ref.className;
+
+  var Errors = function Errors() {
+    if (invalid) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, null, errorMessage);
+    }
+
+    return null;
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: className
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    type: "fas",
+    iconName: "fa-search"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInput, {
+    onChange: onChange,
+    name: name,
+    onBlur: onBlur,
+    required: required,
+    disabled: disabled,
+    invalid: invalid,
+    type: type,
+    placeholder: placeholder,
+    value: value
+  })), Errors());
+};
+
+Input.propTypes = {
+  type: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
+  disabled: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.boolean,
+  onChange: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+  onBlur: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+  placeholder: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  required: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.boolean,
+  invalid: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.boolean,
+  value: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  errorMessage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  name: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string
+};
+/* harmony default export */ __webpack_exports__["default"] = (Input);
+Input.defaultProps = {
+  invalid: false,
+  required: false,
+  className: ''
+};
+
+/***/ }),
+
 /***/ "./resources/js/react/src/Components/TopNavButton/index.js":
 /*!*****************************************************************!*\
   !*** ./resources/js/react/src/Components/TopNavButton/index.js ***!
@@ -69849,7 +69970,7 @@ TopNavButton.defaultProps = {
 /*!****************************************************!*\
   !*** ./resources/js/react/src/Components/index.js ***!
   \****************************************************/
-/*! exports provided: Button, Icon, TopNavButton, TopNavLink */
+/*! exports provided: Button, Icon, Input, TopNavButton, TopNavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69865,6 +69986,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony import */ var _TopNavLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TopNavLink */ "./resources/js/react/src/Components/TopNavLink/index.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TopNavLink", function() { return _TopNavLink__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _Input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Input */ "./resources/js/react/src/Components/Input/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return _Input__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
 
 
 
@@ -69936,6 +70061,8 @@ var TopNav = function TopNav() {
     type: "far",
     iconName: "fa-clock",
     to: "/contact"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+    type: "text"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightBar, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components__WEBPACK_IMPORTED_MODULE_2__["TopNavLink"], {
     name: "Live",
     type: "far",
