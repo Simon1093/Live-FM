@@ -23,7 +23,7 @@ class Detect extends Controller
     public function __invoke()
     {
         $List = Devices::GetList();
-        $data["title"] = 'Live-FM';
+        $data["title"] = env('APP_NAME');
 
         foreach( $List as $Item ) 
         {

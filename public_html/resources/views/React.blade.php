@@ -7,7 +7,7 @@
     <!-- Scripts -->
     <script>
         window.App = {!! json_encode([
-            'name' => config('app.name'),
+            'name' => $title,
             'google_client_id' => config('services.google.client_id')
         ]) !!};
     </script>
