@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card } from '../Card';
-import TopNavLink from '../TopNavLink';
+import { Card, TopNavLink } from '../';
 const Container = styled.div`
     padding-bottom: 5px
 `
@@ -29,10 +28,9 @@ const StyledLink = styled(TopNavLink)`
     margin-left: auto;
 `
 
-const mockData = [1, 2, 3, 4, 5]
+const mockData = [1, 2, 3, 4, 5, 6, 7]
 
-export const InfoBox = () => {
-    // render() {
+const InfoBox = () => {
     return (
         <Container>
             <TopSection>
@@ -43,14 +41,12 @@ export const InfoBox = () => {
                     iconName="fa-creative-commons-sampling"
                     to="/"
                 />
-                {/* <StyledButton>Test</StyledButton> */}
             </TopSection>
             <Center>
-                {mockData.map(param => <Card key={param} />)}
+                {mockData.map((param, key) => key < 4 ? <Card key={param} /> : null)}
             </Center>
         </Container>
     )
 }
-// }
 
-// export default InfoBox;
+export default InfoBox;

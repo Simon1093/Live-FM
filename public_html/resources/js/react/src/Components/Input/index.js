@@ -39,6 +39,7 @@ export const StyledInput = styled.input`
 const Container = styled.div`
   display: flex;
   align-items: center;
+  padding-left: 15px;
 `
 
 
