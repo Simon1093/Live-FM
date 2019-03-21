@@ -69630,7 +69630,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    margin: 0 0 4px 0;\n    padding: 0 2px;\n    widht: 20%;\n    background: green;\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin: 0 10px 4px 10px;\n    padding: 0 2px;\n    width: 20%;\n    background: green;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -69763,7 +69763,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    font-size: 24px;\n    display: flex;\n    height: 40px;\n    line-height: 40px;\n    margin: 0 2px 4px 2px;\n    padding: 5px 20px 0 20px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    font-size: 24px;\n    display: flex;\n    height: 40px;\n    line-height: 40px;\n    margin: 0 2px 4px 2px;\n    padding: 5px 20px 0 20px;\n    border-bottom: 1px solid grey;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;

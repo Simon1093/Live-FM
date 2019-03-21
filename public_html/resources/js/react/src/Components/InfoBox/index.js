@@ -13,6 +13,7 @@ const TopSection = styled.div`
     line-height: 40px;
     margin: 0 2px 4px 2px;
     padding: 5px 20px 0 20px;
+    border-bottom: 1px solid grey;
 `
 const Label = styled.span`
     color: white;
