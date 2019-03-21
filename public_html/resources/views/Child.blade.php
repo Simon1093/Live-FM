@@ -9,16 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script>
-        window.App = {!! json_encode([
-            'name' => config('app.name'),
-            'google_client_id' => config('services.google.client_id')
-        ]) !!};
-    </script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <title>{{ $title }}</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
@@ -28,8 +19,7 @@
 </head>
 
 <body class="font-sans h-full text-grey-darkest">
-    <div id="app" class="flex flex-col">
-    </div>
+    @yield('content')
 </body>
 
 </html>

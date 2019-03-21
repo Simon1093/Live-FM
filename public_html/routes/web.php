@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/{uri?}', function () {
-    return view('welcome');
-})->where('uri', '(.*)');
+Route::get('/{uri?}', 'Detect')->where('uri', '(.*)');
 
 // //Для кросс доменных запросов (лишним думаю не будет)
 // Route::group([ 'middleware' => ['api', 'cors'],'prefix' => 'api',], function ($router) {
