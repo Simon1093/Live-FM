@@ -12,19 +12,15 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <h1>Simple SPA</h1>
           <TopNav />
-          <ul className="header">
-            <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/stuff">Stuff</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
-          <div className="content">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/stuff" component={Stuff} />
-              <Route path="/contact" component={Contact} />
-            </Switch>
+          <div style={{ 'padding-top': '60px' }}>
+            <div >
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/stuff" component={Stuff} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
+            </div>
           </div>
         </div>
       </Router>

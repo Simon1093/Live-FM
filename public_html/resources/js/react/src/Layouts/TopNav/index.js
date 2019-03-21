@@ -33,9 +33,14 @@ const StyledRightBar = styled.div`
 
 const TopNav = () => (
   <StyledTopNav>
-    <div>TopNav</div>
     <StyledLeftBar>
 
+      <TopNavLink
+        name="Home"
+        type="fas"
+        iconName="fa-home"
+        to="/"
+      />
       <TopNavButton
         name="Menu"
         type="fa"
